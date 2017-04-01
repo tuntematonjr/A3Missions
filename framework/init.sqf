@@ -51,7 +51,7 @@ if (!isNull player) then
 	};
 };
 
- //JIP
+//JIP
 if (!isServer && isNull player) then 
 { 
 waitUntil {!isNull player};

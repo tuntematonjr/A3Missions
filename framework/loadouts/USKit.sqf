@@ -29,6 +29,7 @@ _Helmet_SL	= "rhsusf_ach_helmet_M81";
 _Helmet_Crew= "rhsusf_cvc_ess";
 
 _Vest_SL 	= "rhsusf_iotv_ocp_Squadleader";
+_Vest_TL	= "rhsusf_iotv_ocp_Teamleader";
 _Vest_Rifle = "rhsusf_iotv_ocp_Rifleman";
 _Vest_Medic = "rhsusf_iotv_ocp_Medic";
 _Vest_AR 	= "rhsusf_iotv_ocp_SAW";
@@ -47,6 +48,16 @@ _Weap_AT	= "rhs_weap_M136";
 _Laser		= "rhsusf_acc_anpeq15A";
 _Optic 		= "rhsusf_acc_compm4";
 
+_Mag_Rifle	= "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+_Mag_RifleTR= "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+_Mag_AR		= "rhsusf_100Rnd_556x45_soft_pouch";
+_Mag_Pistol	= "16Rnd_9x21_Mag";
+_Mag_RPG1   = "rhs_m136_mag";
+
+_Mag_HE		= "rhs_mag_M441_HE";
+_Mag_HEDP	= "rhs_mag_M433_HEDP";
+_Mag_HET	= "rhs_mag_M397_HET";
+_Mag_SMK	= "1Rnd_Smoke_Grenade_shell";
 
 switch (_type) do
  	{ 
@@ -54,25 +65,21 @@ switch (_type) do
 		 case "PL":
  		{
 			_unit forceAddUniform _Uniform;
-			for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing";};
-			_unit addItemToUniform "Ace_Morphine";
-			_unit addItemToUniform "ace_CableTie";
-			_unit addItemToUniform "ACE_EarPlugs";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
-			_unit addItemToUniform "16Rnd_9x21_Mag";
+			for "_i" from 1 to 2 do {_unit addItemToUniform _Mag_rifle;};
+			_unit addItemToUniform _Mag_Pistol;
 			
 			_unit addVest _Vest_SL;
 			for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellRed";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
-			for "_i" from 1 to 4 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+			for "_i" from 1 to 4 do {_unit addItemToVest _Mag_rifle;};
 			
 			_unit addBackpack _Radio;
 			_unit addItemToBackpack "ACE_HandFlare_White";
 			_unit addItemToBackpack "ACE_HandFlare_Red";
 			_unit addItemToBackpack "ACE_HandFlare_Green";
-			for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+			for "_i" from 1 to 2 do {_unit addItemToBackpack _Mag_rifle;};
 			
 			_unit addHeadgear _Helmet_SL;
 			
@@ -89,25 +96,21 @@ switch (_type) do
 		 case "SL":
  		{
 			_unit forceAddUniform _Uniform;
-			for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing";};
-			_unit addItemToUniform "Ace_Morphine";
-			_unit addItemToUniform "ace_CableTie";
-			_unit addItemToUniform "ACE_EarPlugs";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
-			_unit addItemToUniform "16Rnd_9x21_Mag";
+			for "_i" from 1 to 2 do {_unit addItemToUniform _Mag_rifle;};
+			_unit addItemToUniform _Mag_Pistol;
 			
 			_unit addVest _Vest_SL;
 			for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellRed";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
-			for "_i" from 1 to 4 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+			for "_i" from 1 to 4 do {_unit addItemToVest _Mag_rifle;};
 			
 			_unit addBackpack _Radio;
 			_unit addItemToBackpack "ACE_HandFlare_White";
 			_unit addItemToBackpack "ACE_HandFlare_Red";
 			_unit addItemToBackpack "ACE_HandFlare_Green";
-			for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+			for "_i" from 1 to 2 do {_unit addItemToBackpack _Mag_rifle;};
 			
 			_unit addHeadgear _Helmet_SL;
 			_unit addWeapon _Weap_Rifle;
@@ -121,18 +124,14 @@ switch (_type) do
 		 case "UAV":
 		{
 			_unit forceAddUniform _Uniform;
-			for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing";};
-			_unit addItemToUniform "Ace_Morphine";
-			_unit addItemToUniform "ace_CableTie";
-			_unit addItemToUniform "ACE_EarPlugs";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
-			_unit addItemToUniform "16Rnd_9x21_Mag";
+			for "_i" from 1 to 2 do {_unit addItemToUniform _Mag_rifle;};
+			_unit addItemToUniform _Mag_Pistol;
 			
 			_unit addVest _Vest_SL;
 			_unit addItemToVest "ACE_UAVBattery";
 			for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
-			for "_i" from 1 to 4 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+			for "_i" from 1 to 4 do {_unit addItemToVest _Mag_rifle;};
 			
 			_unit addBackpack "B_UAV_01_backpack_F";
 			
@@ -148,18 +147,14 @@ switch (_type) do
 		 case "MEDIC":
  		{
 			_unit forceAddUniform _Uniform;
-			for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing";};
-			_unit addItemToUniform "Ace_Morphine";
-			_unit addItemToUniform "ace_CableTie";
-			_unit addItemToUniform "ACE_EarPlugs";
-			_unit addItemToUniform "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+			_unit addItemToUniform _Mag_rifle;
 			
 			_unit addVest _Vest_Medic;
 			for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellRed";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
-			for "_i" from 1 to 4 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+			for "_i" from 1 to 4 do {_unit addItemToVest _Mag_rifle;};
 			
 			_unit addBackpack _Backpack;
 			for "_i" from 1 to 4 do {_unit addItemToBackpack "ACE_bloodIV";};
@@ -172,7 +167,7 @@ switch (_type) do
 			for "_i" from 1 to 8 do {_unit addItemToBackpack "ACE_morphine";};
 			for "_i" from 1 to 10 do {_unit addItemToBackpack "ACE_fieldDressing";};
 			for "_i" from 1 to 3 do {_unit addItemToBackpack "ACE_personalAidKit";};
-			_unit addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+			_unit addItemToBackpack _Mag_RifleTR;
 			
 			_unit addHeadgear _Helmet;
 			_unit addWeapon _Weap_Rifle;
@@ -183,27 +178,23 @@ switch (_type) do
 		 case "TL":
  		{
 			_unit forceAddUniform _Uniform;
-			for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing";};
-			_unit addItemToUniform "Ace_Morphine";
-			_unit addItemToUniform "ace_CableTie";
-			_unit addItemToUniform "ACE_EarPlugs";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+			for "_i" from 1 to 2 do {_unit addItemToUniform _Mag_rifle;};
 			
-			_unit addVest "rhsusf_iotv_ocp_Teamleader";
+			_unit addVest _Vest_TL;
 			for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
-			for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_M397_HET";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_M441_HE";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_M433_HEDP";};
-			
+			for "_i" from 1 to 2 do {_unit addItemToVest _Mag_rifle;};
+			for "_i" from 1 to 3 do {_unit addItemToVest _Mag_HET;};
+			for "_i" from 1 to 3 do {_unit addItemToVest _Mag_HE;};
+			for "_i" from 1 to 3 do {_unit addItemToVest _Mag_HEDP;};
+	
 			_unit addBackpack _Backpack;
 			_unit addItemToBackpack "ACE_HandFlare_White";
 			_unit addItemToBackpack "ACE_HandFlare_Red";
 			_unit addItemToBackpack "ACE_HandFlare_Green";
-			for "_i" from 1 to 8 do {_unit addItemToBackpack "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
-			for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
-			for "_i" from 1 to 2 do {_unit addItemToBackpack "1Rnd_Smoke_Grenade_shell";};
+			for "_i" from 1 to 8 do {_unit addItemToBackpack _Mag_rifle;};
+			for "_i" from 1 to 2 do {_unit addItemToBackpack _Mag_RifleTR;};
+			for "_i" from 1 to 2 do {_unit addItemToBackpack _Mag_SMK;};
 			
 			_unit addHeadgear _Helmet;
 			_unit addWeapon _Weap_Gren;
@@ -215,26 +206,24 @@ switch (_type) do
 		 case "RIFLE":
  		{
 			_unit forceAddUniform _Uniform;
-			for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing";};
-			_unit addItemToUniform "Ace_Morphine";
-			_unit addItemToUniform "ace_CableTie";
-			_unit addItemToUniform "ACE_EarPlugs";
-			_unit addItemToUniform "rhs_mag_30Rnd_556x45_Mk318_Stanag";
+
+ 
+			_unit addItemToUniform _Mag_rifle;
 			
 			_unit addVest _Vest_Rifle;
 			for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellRed";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
-			for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+			for "_i" from 1 to 2 do {_unit addItemToVest _Mag_rifle;};
 			
 			_unit addBackpack _Backpack;
 			_unit addItemToBackpack "ACE_HandFlare_White";
 			_unit addItemToBackpack "ACE_HandFlare_Red";
 			_unit addItemToBackpack "ACE_HandFlare_Green";
-			for "_i" from 1 to 6 do {_unit addItemToBackpack "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
-			for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag";};
-			for "_i" from 1 to 2 do {_unit addItemToBackpack "rhsusf_100Rnd_556x45_soft_pouch";};
+			for "_i" from 1 to 6 do {_unit addItemToBackpack _Mag_rifle;};
+			for "_i" from 1 to 2 do {_unit addItemToBackpack _Mag_rifle;};
+			for "_i" from 1 to 2 do {_unit addItemToBackpack _Mag_AR;};
 			
 			_unit addHeadgear _Helmet;
 			_unit addWeapon _Weap_Rifle;
@@ -246,26 +235,24 @@ switch (_type) do
 		 case "AR":
  		{
 			_unit forceAddUniform _Uniform;
-			for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing";};
-			_unit addItemToUniform "Ace_Morphine";
-			_unit addItemToUniform "ace_CableTie";
-			_unit addItemToUniform "ACE_EarPlugs";
-			_unit addItemToUniform "rhsusf_100Rnd_556x45_soft_pouch";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "16Rnd_9x21_Mag";};
+
+ 
+			_unit addItemToUniform _Mag_AR;
+			for "_i" from 1 to 2 do {_unit addItemToUniform _Mag_Pistol;};
 			
-			_unit addVest "_Vest_AR";
+			_unit addVest _Vest_AR;
 			for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellRed";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShellGreen";};
-			for "_i" from 1 to 2 do {_unit addItemToVest "rhsusf_100Rnd_556x45_soft_pouch";};
+			for "_i" from 1 to 2 do {_unit addItemToVest _Mag_AR;};
 			
 			_unit addBackpack _Backpack;
 			_unit addItemToBackpack "ACE_HandFlare_White";
 			_unit addItemToBackpack "ACE_HandFlare_Red";
 			_unit addItemToBackpack "ACE_HandFlare_Green";
-			for "_i" from 1 to 2 do {_unit addItemToBackpack "16Rnd_9x21_Mag";};
-			for "_i" from 1 to 4 do {_unit addItemToBackpack "rhsusf_100Rnd_556x45_soft_pouch";};
+			for "_i" from 1 to 2 do {_unit addItemToBackpack _Mag_Pistol;};
+			for "_i" from 1 to 4 do {_unit addItemToBackpack _Mag_AR;};
 			
 			_unit addHeadgear _Helmet;
 			_unit addWeapon _Weap_AR;
@@ -277,28 +264,24 @@ switch (_type) do
 		 case "GREN":
 		{
 			_unit forceAddUniform _Uniform;
-			for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing";};
-			_unit addItemToUniform "Ace_Morphine";
-			_unit addItemToUniform "ace_CableTie";
-			_unit addItemToUniform "ACE_EarPlugs";
-			for "_i" from 1 to 2 do {_unit addItemToUniform "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+			for "_i" from 1 to 2 do {_unit addItemToUniform _Mag_rifle;};
 			
-			_unit addVest "_Vest_Gren";
+			_unit addVest _Vest_Gren;
 			for "_i" from 1 to 2 do {_unit addItemToVest "HandGrenade";};
 			for "_i" from 1 to 2 do {_unit addItemToVest "SmokeShell";};
-			for "_i" from 1 to 2 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_M397_HET";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_M441_HE";};
-			for "_i" from 1 to 3 do {_unit addItemToVest "rhs_mag_M433_HEDP";};
+			for "_i" from 1 to 2 do {_unit addItemToVest _Mag_rifle;};
+			for "_i" from 1 to 3 do {_unit addItemToVest _Mag_HET;};
+			for "_i" from 1 to 3 do {_unit addItemToVest _Mag_HE;};
+			for "_i" from 1 to 3 do {_unit addItemToVest _Mag_HEDP;};
 			
 			_unit addBackpack _Backpack;
 			_unit addItemToBackpack "ACE_HandFlare_White";
 			_unit addItemToBackpack "ACE_HandFlare_Red";
 			_unit addItemToBackpack "ACE_HandFlare_Green";
-			for "_i" from 1 to 8 do {_unit addItemToBackpack "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
-			for "_i" from 1 to 2 do {_unit addItemToBackpack "rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";};
-			for "_i" from 1 to 2 do {_unit addItemToBackpack "1Rnd_Smoke_Grenade_shell";};
-			_unit addItemToBackpack "rhs_m136_mag";
+			for "_i" from 1 to 8 do {_unit addItemToBackpack _Mag_rifle;};
+			for "_i" from 1 to 2 do {_unit addItemToBackpack _Mag_RifleTR;};
+			for "_i" from 1 to 2 do {_unit addItemToBackpack _Mag_SMK;};
+			_unit addItemToBackpack _Mag_RPG1;
 			
 			_unit addHeadgear _Helmet;
 			_unit addWeapon _weap_Gren;
@@ -312,13 +295,9 @@ switch (_type) do
 			_unit forceAddUniform _Uniform;
 			_unit addItemToUniform "ACE_Clacker";
 			_unit addItemToUniform "ACE_DefusalKit";
-			for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing";};
-			_unit addItemToUniform "Ace_Morphine";
-			_unit addItemToUniform "ace_CableTie";
-			_unit addItemToUniform "ACE_EarPlugs";
-			
+
 			_unit addVest _Vest_Rifle;
-			for "_i" from 1 to 4 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+			for "_i" from 1 to 4 do {_unit addItemToVest _Mag_rifle;};
 			
 			_unit addBackpack _Radio;
 			
@@ -333,13 +312,9 @@ switch (_type) do
 			_unit forceAddUniform _Uniform;
 			_unit addItemToUniform "ACE_Clacker";
 			_unit addItemToUniform "ACE_DefusalKit";
-			for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing";};
-			_unit addItemToUniform "Ace_Morphine";
-			_unit addItemToUniform "ace_CableTie";
-			_unit addItemToUniform "ACE_EarPlugs";
-			
+
 			_unit addVest _Vest_Rifle;
-			for "_i" from 1 to 4 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag";};
+			for "_i" from 1 to 4 do {_unit addItemToVest _Mag_rifle;};
 			
 			_unit addHeadgear _Helmet_Crew;
 			_unit addWeapon _Weap_Rifle;
@@ -355,10 +330,10 @@ switch (_type) do
 
 		_unit setVariable ["AFI_vehicle_gear","west",true];
 		
-		_unit addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_Mk318_Stanag",50]; 
-        _unit addMagazineCargoGlobal ["rhsusf_100Rnd_556x45_soft_pouch",15];
+		_unit addMagazineCargoGlobal [_Mag_rifle,50]; 
+        _unit addMagazineCargoGlobal [_Mag_AR,15];
 		_unit addMagazineCargoGlobal ["rhs_fim92_mag", 6];		
-		_unit addMagazineCargoGlobal ["rhs_mag_M433_HEDP",15]; 
+		_unit addMagazineCargoGlobal [_Mag_HEDP,15]; 
 
 		_unit addWeaponCargoGlobal ["rhs_weap_M136",8]; 
 		_unit addWeaponCargoGlobal ["rhs_weap_fim92", 1];
@@ -398,9 +373,9 @@ switch (_type) do
 	};
 };
  	//FOR EVERYONE
+			for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing";};
 			_unit addItemTobackpack "ACE_morphine";
-			_unit addItemTobackpack "ACE_quikclot";
-			_unit addItemTobackpack "ACE_quikclot";
+			_unit addItemToUniform "ACE_EarPlugs";
 			for "_i" from 1 to 2 do {_unit addItemTobackpack "ACE_tourniquet";};
 			for "_i" from 1 to 4 do {_unit addItemTobackpack "ACE_packingBandage";};
 			_unit addItemToVest "ACE_Flashlight_MX991";
