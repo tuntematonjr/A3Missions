@@ -1,0 +1,29 @@
+﻿//#include "plank\plank.h"
+
+corpseManagerMode = 1;
+corpseLimit = 20;
+corpseRemovalMinTime = 90; //seconds
+corpseRemovalMaxTime = 300; //seconds
+
+wreckManagerMode = 1;
+wreckLimit = 6;
+wreckRemovalMinTime = 300; //seconds
+wreckRemovalMaxTime = 600; //seconds 
+
+
+author = "Saunatyyny";
+onLoadName = "CO99 NAME";
+onLoadMission = "www.armafinland.fi";
+respawnButton = 1;
+disabledAI = 0;
+respawn = 1;
+enableDebugConsole = 1;
+//loadscreen="loadscreen.jpg";
+
+
+class Header
+{
+	minPlayers = 1;
+	maxPlayers = 99;
+	gameType = Coop;
+};
