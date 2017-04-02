@@ -18,9 +18,6 @@ private ["_type", "_unit"];
 	_unit linkItem "ItemWatch";
 	_unit linkItem "tf_anprc148jem";
 	
-	};
-};
-	
 	_headGear = ["rhssaf_helmet_m97_digital",
 				"rhssaf_helmet_m97_oakleaf", 
 				"rhssaf_helmet_m97_digital_black_ess", 
@@ -47,7 +44,7 @@ private ["_type", "_unit"];
 				"rhssaf_vest_md99_md2camo"] call BIS_fnc_selectRandom;
 	
 	_rifleM21 = "rhs_weap_m21a";		
-  _rifleM70 = "rhs_weap_m70ab2";
+	_rifleM70 = "rhs_weap_m70ab2";
 	_rifleM21MAG = "rhsgref_30rnd_556x45_m21";
 	_rifleM21MAGT = "rhsgref_30rnd_556x45_m21_t";
 	_rifleM70MAG = "rhs_30Rnd_762x39mm";
@@ -100,6 +97,7 @@ private ["_type", "_unit"];
 
  	switch (_type) do
  	{ 
+		//#1
 		case "PL":
  		{
 			_unit forceAddUniform _uniform;
@@ -115,10 +113,12 @@ private ["_type", "_unit"];
 			for "_i" from 1 to 2 do {this addItemToVest _grenade;};
 			for "_i" from 1 to 3 do {this addItemToVest _rifleM21MAG;};
 			for "_i" from 1 to 1 do {this addItemToVest _smoke;};
-			for "_i" from 1 to 1 do {this addItemToVest _smokeGreen;};			
+			for "_i" from 1 to 1 do {this addItemToVest _smokeGreen;};		
+			
 			_unit addWeapon _rifleM21;
 			_unit addWeapon _bino;
 		};
+		//#2
 		case "MEDIC":
  		{
 			_unit forceAddUniform _uniform;
@@ -140,9 +140,11 @@ private ["_type", "_unit"];
 			for "_i" from 1 to 8 do {_unit addItemToBackpack _morphine;};
 			for "_i" from 1 to 30 do {_unit addItemToBackpack _bandage;};
 			for "_i" from 1 to 2 do {_unit addItemToBackpack _smoker;};
-			for "_i" from 1 to 2 do {_unit addItemToBackpack _smokeg;};			
+			for "_i" from 1 to 2 do {_unit addItemToBackpack _smokeg;};		
+			
 			_unit addWeapon _rifleM70;
 		};
+		//#3
 		case "SL":
  		{
 			_unit forceAddUniform _uniform;
@@ -160,10 +162,12 @@ private ["_type", "_unit"];
 			for "_i" from 1 to 2 do {this addItemToBackpack _rifleM70MAG;};
 			for "_i" from 1 to 1 do {this addItemToBackpack _rifleM70MAGT;};
 			for "_i" from 1 to 1 do {this addItemToVest _smoke;};
-			for "_i" from 1 to 1 do {this addItemToVest _smokeGreen;};			
+			for "_i" from 1 to 1 do {this addItemToVest _smokeGreen;};		
+			
 			_unit addWeapon _rifleM70;
 			_unit addWeapon _bino;
 		};
+		//#4
 		case "TL":
  		{
 			_unit forceAddUniform _uniform;
@@ -181,9 +185,11 @@ private ["_type", "_unit"];
 			for "_i" from 1 to 2 do {this addItemToBackpack _rifleM70MAGT;};
 			for "_i" from 1 to 1 do {this addItemToVest _smoke;};
 			for "_i" from 1 to 1 do {this addItemToVest _smokeGreen;};	
-			for "_i" from 1 to 1 do {this addItemToBackpack _MGMAG;};				
+			for "_i" from 1 to 1 do {this addItemToBackpack _MGMAG;};	
+			
 			_unit addWeapon _rifleM70;
 		};
+		//#5
 		case "RIFLE":
  		{
 			_unit forceAddUniform _uniform;
@@ -199,9 +205,11 @@ private ["_type", "_unit"];
 			for "_i" from 1 to 4 do {this addItemToVest _rifleM21MAG;};
 			for "_i" from 1 to 10 do {this addItemToBackpack _rifleM21MAG;};
 			for "_i" from 1 to 2 do {this addItemToBackpack _rifleM21MAGT;};	
-			for "_i" from 1 to 1 do {this addItemToBackpack _MGMAG;};			
+			for "_i" from 1 to 1 do {this addItemToBackpack _MGMAG;};		
+			
 			_unit addWeapon _rifleM21;
 		};
+		//#6
 		case "MG":
  		{
 			_unit forceAddUniform _uniform;
@@ -215,10 +223,12 @@ private ["_type", "_unit"];
 			for "_i" from 1 to 2 do {this addItemToVest _grenade;};
 			for "_i" from 1 to 1 do {_unit addItemToVest _smoke;};
 			for "_i" from 1 to 3 do {this addItemToBackpack _MGMAG;};
-			for "_i" from 1 to 1 do {this addItemToBackpack _MGMAGT;};		
+			for "_i" from 1 to 1 do {this addItemToBackpack _MGMAGT;};
+			
 			_unit addWeapon _MG;
 		};
-		case "GL":
+		//#7
+		case "GREN":
  		{
 			_unit forceAddUniform _uniform;
 			_unit addVest _vest;
@@ -238,6 +248,7 @@ private ["_type", "_unit"];
 			
 			_unit addWeapon _GL;
 		};
+		//#8
 		case "AT":
  		{
 			_unit forceAddUniform _uniform;
@@ -252,10 +263,12 @@ private ["_type", "_unit"];
 			for "_i" from 1 to 4 do {this addItemToVest _rifleM70MAG;};
 			for "_i" from 1 to 10 do {this addItemToBackpack _rifleM70MAG;};
 			for "_i" from 1 to 2 do {this addItemToBackpack _rifleM70MAGT;};	
-			for "_i" from 1 to 1 do {this addItemToBackpack _MGMAG;};			
+			for "_i" from 1 to 1 do {this addItemToBackpack _MGMAG;};		
+			
 			_unit addWeapon _rifleM70;
 			_unit addWeapon _AT;
 		};
+		//#9
 		case "MGASS":
  		{
 			_unit forceAddUniform _uniform;
@@ -268,10 +281,12 @@ private ["_type", "_unit"];
 			for "_i" from 1 to 2 do {this addItemToVest _grenade;};
 			for "_i" from 1 to 1 do {_unit addItemToVest _smoke;};
 			for "_i" from 1 to 6 do {this addItemToVest _rifleM70MAG;};	
-			for "_i" from 1 to 3 do {this addItemToBackpack _MGMAG;};			
+			for "_i" from 1 to 3 do {this addItemToBackpack _MGMAG;};		
+			
 			_unit addWeapon _rifleM70;
 		};
-		case "COMMANDER":
+		//#10
+		case "CREWCOM":
  		{
 			_unit forceAddUniform _uniform;
 			_unit addVest _vestCommander;
@@ -284,11 +299,13 @@ private ["_type", "_unit"];
 			for "_i" from 1 to 15 do {this addItemToUniform _bandage;};
 			for "_i" from 1 to 2 do {this addItemToUniform _morphine;};
 			for "_i" from 1 to 3 do {this addItemToUniform _pistolMAG;};
-			for "_i" from 1 to 3 do {this addItemToVest _rifleM70MAG;};			
+			for "_i" from 1 to 3 do {this addItemToVest _rifleM70MAG;};		
+			
 			_unit addWeapon _rifleM92;
 			_unit addWeapon _pistol;
 			_unit addWeapon _bino;
 		};
+		//#11
 		case "CREW":
  		{
 			_unit forceAddUniform _uniform;
@@ -297,9 +314,11 @@ private ["_type", "_unit"];
 			_unit addItemToUniform _earplugs;
 			for "_i" from 1 to 15 do {this addItemToUniform _bandage;};
 			for "_i" from 1 to 2 do {this addItemToUniform _morphine;};
-			for "_i" from 1 to 3 do {this addItemToVest _rifleM70MAG;};			
+			for "_i" from 1 to 3 do {this addItemToVest _rifleM70MAG;};		
+			
 			_unit addWeapon _rifleM92;
 		};
+		//#12
 		case "MSL":
  		{
 			_unit forceAddUniform _uniform;
@@ -318,10 +337,12 @@ private ["_type", "_unit"];
 			for "_i" from 1 to 2 do {this addItemToBackpack _rifleM70MAG;};
 			for "_i" from 1 to 1 do {this addItemToBackpack _rifleM70MAGT;};
 			for "_i" from 1 to 1 do {this addItemToVest _smoke;};
-			for "_i" from 1 to 1 do {this addItemToVest _smokeGreen;};			
+			for "_i" from 1 to 1 do {this addItemToVest _smokeGreen;};		
+			
 			_unit addWeapon _rifleM70;
 			_unit addWeapon _bino;
 		};
+		//#13
 		case "MGUNNER":
  		{
 			_unit forceAddUniform _uniform;
@@ -337,8 +358,10 @@ private ["_type", "_unit"];
 			for "_i" from 1 to 2 do {this addItemToVest _grenade;};
 			for "_i" from 1 to 1 do {_unit addItemToVest _smoke;};
 			for "_i" from 1 to 4 do {this addItemToVest _rifleM70MAG;};		
+			
 			_unit addWeapon _rifleM70;
 		};
+		//#14
 		case "MM":
  		{
 			_unit forceAddUniform _uniform;
@@ -353,11 +376,12 @@ private ["_type", "_unit"];
 			for "_i" from 1 to 1 do {_unit addItemToVest _smoke;};
 			for "_i" from 1 to 4 do {this addItemToVest _rifleSniperMAG;};
 			for "_i" from 1 to 12 do {this addItemToBackpack _rifleSniperMAG;};		
+			
 			_unit addWeapon _rifleSniper;
 			_unit addPrimaryWeaponItem _rifleScope;
 			_unit addWeapon _bino;
 		};
-		
+		//#15
 	Case "TRUCK":
 	{	clearWeaponCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
@@ -382,6 +406,7 @@ private ["_type", "_unit"];
 		_unit addItemCargoGlobal [_wire,1];
 		_unit setVariable ["AFI_vehicle_gear","guer",true];
 	};
+	//#16
 	Case "HUMVEE":
 	{	clearWeaponCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
@@ -406,6 +431,7 @@ private ["_type", "_unit"];
 		_unit addItemCargoGlobal [_det,1];
 		_unit setVariable ["AFI_vehicle_gear","guer",true];
 	};
+	//#17
 	Case "TANK":
 	{	clearWeaponCargoGlobal _unit;
 		clearItemCargoGlobal _unit;
@@ -416,6 +442,7 @@ private ["_type", "_unit"];
 		_unit addItemCargoGlobal [_earplugs,10];
 		_unit disableTIEquipment true;
 	};
+	//#18
 	Case "STATIC":
 	{  	clearMagazineCargoGlobal _unit;
 		clearWeaponCargoGlobal _unit;
