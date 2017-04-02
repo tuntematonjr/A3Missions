@@ -18,7 +18,7 @@ respawnButton = 1;
 disabledAI = 0;
 respawn = 1;
 enableDebugConsole = 1;
-//loadscreen="loadscreen.jpg";
+loadscreen="resources\loadscreen.jpg";
 
 
 class Header

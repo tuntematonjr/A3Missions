@@ -39,6 +39,7 @@ if (!isNull player) then
 	{
 		waitUntil {!isNull player};
 		nul = [] execVM "briefing.sqf";
+		["MarkerName"] execVM "scripts\coverMap.sqf";
 	
 		/*if(side player == WEST) then 
 		{
@@ -54,9 +55,10 @@ if (!isNull player) then
 //JIP
 if (!isServer && isNull player) then 
 { 
-waitUntil {!isNull player};
-[]execvm "start_text\init.sqf";
-nul = [] execVM "briefing.sqf";
+	waitUntil {!isNull player};
+	[]execvm "start_text\init.sqf";
+	nul = [] execVM "briefing.sqf";
+	["MarkerName"] execVM "scripts\coverMap.sqf";
 	/*if (hasInterface) then 
 	{
 	waitUntil {!isNull player};
