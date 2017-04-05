@@ -1,4 +1,4 @@
-﻿//#include "plank\plank.h"
+﻿
 
 corpseManagerMode = 1;
 corpseLimit = 20;
@@ -14,7 +14,7 @@ class Header
 {
 	minPlayers = 1;//Min players of your mission
 	maxPlayers = 99;//Max players of your mission
-	gameType = Coop;//Mission type, can be either Coop/Seize/Defend/Team/Unknown
+	gameType = Team;//Mission type, can be either Coop/Seize/Defend/Team/Unknown
 };
 
 author = "YourName"; //Your name here

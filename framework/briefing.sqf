@@ -3,7 +3,7 @@
 player createDiaryRecord ["Diary",["Yleistä","
 General
 <br/>
-Tekijä Saunatyyny
+Tekijä Nimitähän
 <br/>
 "]];
 
