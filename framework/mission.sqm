@@ -8,44 +8,82 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=609;
+		nextID=631;
 	};
 	class MarkerIDProvider
 	{
-		nextID=10;
+		nextID=13;
 	};
 	class Camera
 	{
-		pos[]={11561.753,40.963387,11750.568};
-		dir[]={-0.36468691,0.81220174,-0.45543376};
-		up[]={0.50762451,0.58344543,0.63394058};
-		aside[]={-0.78062373,1.8626451e-007,0.6250785};
+		pos[]={16440.684,46.551392,16512.377};
+		dir[]={-0.85898662,-0.31326893,-0.40502504};
+		up[]={-0.28335577,0.94965714,-0.133607};
+		aside[]={-0.4264943,-7.3800038e-008,0.90451097};
 	};
 };
 binarizationWanted=0;
 addons[]=
 {
-	"rhsusf_c_troops",
-	"A3_Data_F_Exp_A_Virtual"
+	"A3_Data_F_Exp_A_Virtual",
+	"A3_Ui_F",
+	"Desert",
+	"ace_medical",
+	"ace_repair",
+	"ace_refuel",
+	"ace_rearm"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=2;
+		items=7;
 		class Item0
-		{
-			className="rhsusf_c_troops";
-			name="RHSUSF Infantry & Equipment";
-			author="Red Hammer Studios";
-			url="http://www.rhsmods.org/";
-		};
-		class Item1
 		{
 			className="A3_Data_F_Exp_A";
 			name="Arma 3 Nexus Update - Main Configuration";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
+		};
+		class Item1
+		{
+			className="A3_Ui_F";
+			name="Arma 3 - User Interface";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item2
+		{
+			className="Desert";
+			name="Desert";
+		};
+		class Item3
+		{
+			className="ace_medical";
+			name="ACE3 - Medical";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item4
+		{
+			className="ace_repair";
+			name="ACE3 - Repair";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item5
+		{
+			className="ace_refuel";
+			name="ACE3 - Refuel";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
+		};
+		class Item6
+		{
+			className="ace_rearm";
+			name="ACE3 - Rearm";
+			author="ACE-Team";
+			url="http://ace3mod.com/";
 		};
 	};
 };
@@ -133,499 +171,8 @@ class Mission
 	};
 	class Entities
 	{
-		items=70;
+		items=82;
 		class Item0
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=2;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11523.706,22.93689,11714.758};
-						angles[]={0.0013372133,2.3079011,6.2818484};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="LIEUTENANT";
-						init="this disableai ""move""; A10 = group this; group this setGroupId [""A10""]; id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A10 - Platoon Leader (CO)""];";
-						name="op_commander";
-						description="A10 - Platoon Leader (CO)";
-						isPlayable=1;
-					};
-					id=1;
-					type="rhsusf_army_ocp_squadleader";
-					atlOffset=3.8146973e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.94999999;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11521.224,22.941441,11712.168};
-						angles[]={-0,2.3858128,0};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="this disableai ""move""; id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A10 - Platoon Sergeant""];";
-						description="A10 - Platoon Sergeant";
-						isPlayable=1;
-					};
-					id=2;
-					type="rhsusf_army_ocp_squadleader";
-					atlOffset=1.9073486e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=0;
-			atlOffset=3.8146973e-006;
-		};
-		class Item1
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=8;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11533.685,22.898216,11726.282};
-						angles[]={0.0013372133,3.5237846,6.2818484};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="this disableai ""move""; A1 = group this; group this setGroupId [""A1""]; id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A1 - Squad Leader""];";
-						description="A1 - Squad Leader";
-						isPlayer=1;
-						isPlayable=1;
-					};
-					id=4;
-					type="rhsusf_army_ocp_squadleader";
-					atlOffset=1.9073486e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.95999998;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11536.669,22.89024,11728.829};
-						angles[]={0.0026520467,3.7211897,6.2805333};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="this disableai ""move""; id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A1 - Team Leader""];";
-						description="A1 - Team Leader";
-						isPlayable=1;
-					};
-					id=5;
-					type="rhsusf_army_ocp_teamleader";
-					atlOffset=1.9073486e-006;
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11537.524,22.880524,11731.095};
-						angles[]={0.0039967569,3.828016,6.2805333};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A1 - Grenadier""];";
-						description="A1 - Grenadier";
-						isPlayable=1;
-					};
-					id=6;
-					type="rhsusf_army_ocp_grenadier";
-					atlOffset=1.9073486e-006;
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11538.664,22.868782,11733.271};
-						angles[]={0.0039967569,3.6498139,6.2805333};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A1 - Automatic Rifleman""];";
-						description="A1 - Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=7;
-					type="rhsusf_army_ocp_autorifleman";
-					atlOffset=1.9073486e-006;
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11539.496,22.860905,11735.501};
-						angles[]={0.0026520467,3.5616329,6.2818484};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""RIFLE"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A1 - Rifleman""];";
-						description="A1 - Rifleman";
-						isPlayable=1;
-					};
-					id=8;
-					type="rhsusf_army_ocp_rifleman";
-					atlOffset=1.9073486e-006;
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11532.352,22.894953,11730.056};
-						angles[]={0.0026520467,3.5539558,6.2818484};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="this disableai ""move""; id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A1 - Team Leader""];";
-						description="A1 - Team Leader";
-						isPlayable=1;
-					};
-					id=9;
-					type="rhsusf_army_ocp_teamleader";
-					atlOffset=1.9073486e-006;
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11534.405,22.875917,11734.325};
-						angles[]={0.0039967569,3.4010401,6.2805333};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A1 - Automatic Rifleman""];";
-						description="A1 - Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=11;
-					type="rhsusf_army_ocp_autorifleman";
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11530.662,22.901543,11726.81};
-						angles[]={0.0013372133,3.6680696,6.2818484};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""MEDIC"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A1 - Medic""];";
-						description="A1 - Medic";
-						isPlayable=1;
-					};
-					id=12;
-					type="rhsusf_army_ocp_medic";
-					atlOffset=1.9073486e-006;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=3;
-			atlOffset=1.9073486e-006;
-		};
-		class Item2
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=8;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11545.116,22.864338,11730.096};
-						angles[]={0.0026520467,3.6052403,6.2805333};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="this disableai ""move""; A2 = group this; group this setGroupId [""A2""]; id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A2 - Squad Leader""];";
-						description="A2 - Squad Leader";
-						isPlayable=1;
-					};
-					id=15;
-					type="rhsusf_army_ocp_squadleader";
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11548.288,22.854929,11730.451};
-						angles[]={0.0026520467,3.6385987,6.2805333};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="this disableai ""move""; id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A2 - Team Leader""];";
-						description="A2 - Team Leader";
-						isPlayable=1;
-					};
-					id=16;
-					type="rhsusf_army_ocp_teamleader";
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11549.998,22.843338,11733.088};
-						angles[]={0.0026520467,3.7164178,6.2805333};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A2 - Grenadier""];";
-						description="A2 - Grenadier";
-						isPlayable=1;
-					};
-					id=17;
-					type="rhsusf_army_ocp_grenadier";
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11551.388,22.834213,11735.12};
-						angles[]={0.0026520467,3.8119736,6.2805333};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A2 - Automatic Rifleman""];";
-						description="A2 - Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=18;
-					type="rhsusf_army_ocp_autorifleman";
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11552.563,22.819124,11737.294};
-						angles[]={0.0053265258,3.8105483,6.2778587};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""RIFLE"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A2 - Rifleman""];";
-						description="A2 - Rifleman";
-						isPlayable=1;
-					};
-					id=19;
-					type="rhsusf_army_ocp_rifleman";
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11544.475,22.852276,11735.261};
-						angles[]={0.0026520467,3.5324128,6.2805333};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="this disableai ""move""; id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A2 - Team Leader""];";
-						description="A2 - Team Leader";
-						isPlayable=1;
-					};
-					id=20;
-					type="rhsusf_army_ocp_teamleader";
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11546.395,22.836193,11738.278};
-						angles[]={0.0066682254,3.5879731,6.2805333};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A2 - Automatic Rifleman""];";
-						description="A2 - Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=22;
-					type="rhsusf_army_ocp_autorifleman";
-					atlOffset=1.9073486e-006;
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11542.483,22.866941,11731.745};
-						angles[]={0.0026520467,3.609766,6.2818484};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""MEDIC"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A2 - Medic""];";
-						description="A2 - Medic";
-						isPlayable=1;
-					};
-					id=23;
-					type="rhsusf_army_ocp_medic";
-					atlOffset=3.8146973e-006;
-				};
-			};
-			class Attributes
-			{
-			};
-			id=14;
-		};
-		class Item3
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -737,7 +284,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item4
+		class Item1
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -849,7 +396,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item5
+		class Item2
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -961,7 +508,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item6
+		class Item3
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1073,7 +620,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item7
+		class Item4
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1185,7 +732,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item8
+		class Item5
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1297,7 +844,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item9
+		class Item6
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1409,7 +956,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item10
+		class Item7
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1521,7 +1068,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item11
+		class Item8
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1633,7 +1180,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item12
+		class Item9
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1745,7 +1292,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item13
+		class Item10
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1857,7 +1404,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item14
+		class Item11
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -1969,7 +1516,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item15
+		class Item12
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2081,7 +1628,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item16
+		class Item13
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2193,7 +1740,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item17
+		class Item14
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2305,7 +1852,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item18
+		class Item15
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2417,7 +1964,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item19
+		class Item16
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2529,7 +2076,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item20
+		class Item17
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2641,7 +2188,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item21
+		class Item18
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2753,7 +2300,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item22
+		class Item19
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2865,7 +2412,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item23
+		class Item20
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -2977,7 +2524,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item24
+		class Item21
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3089,375 +2636,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item25
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=8;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11552.763,22.862761,11720.771};
-						angles[]={0.0013372133,4.7558303,6.2791886};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="SERGEANT";
-						init="this disableai ""move""; A3 = group this; group this setGroupId [""A3""]; id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A3 - Squad Leader""];";
-						description="A3 - Squad Leader";
-						isPlayable=1;
-					};
-					id=313;
-					type="rhsusf_army_ocp_squadleader";
-					atlOffset=1.9073486e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11555.836,22.84903,11721.849};
-						angles[]={0.0013372133,3.721122,6.2791886};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="this disableai ""move""; id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A3 - Team Leader""];";
-						description="A3 - Team Leader";
-						isPlayable=1;
-					};
-					id=314;
-					type="rhsusf_army_ocp_teamleader";
-					atlOffset=1.9073486e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11557.013,22.841314,11723.618};
-						angles[]={0.0013372133,3.6383932,6.2805333};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A3 - Grenadier""];";
-						description="A3 - Grenadier";
-						isPlayable=1;
-					};
-					id=315;
-					type="rhsusf_army_ocp_grenadier";
-					atlOffset=3.8146973e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11558.305,22.832342,11725.345};
-						angles[]={0.0013372133,3.538028,6.2765174};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A3 - Automatic Rifleman""];";
-						description="A3 - Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=316;
-					type="rhsusf_army_ocp_autorifleman";
-					atlOffset=1.9073486e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11559.325,22.823265,11727.052};
-						angles[]={0.0013372133,3.6424966,6.2765174};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""RIFLE"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A3 - Rifleman""];";
-						description="A3 - Rifleman";
-						isPlayable=1;
-					};
-					id=317;
-					type="rhsusf_army_ocp_rifleman";
-					atlOffset=1.9073486e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.03;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11551.784,22.859087,11724.505};
-						angles[]={0.0026520467,3.5538669,6.2791886};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						rank="CORPORAL";
-						init="this disableai ""move""; id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A3 - Team Leader""];";
-						description="A3 - Team Leader";
-						isPlayable=1;
-					};
-					id=318;
-					type="rhsusf_army_ocp_teamleader";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11553.819,22.843748,11728.181};
-						angles[]={0.0013372133,3.6440365,6.2805333};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A3 - Automatic Rifleman""];";
-						description="A3 - Automatic Rifleman";
-						isPlayable=1;
-					};
-					id=320;
-					type="rhsusf_army_ocp_autorifleman";
-					atlOffset=3.8146973e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.02;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={11549.263,22.874275,11722.224};
-						angles[]={0.0026520467,3.6137841,6.2805333};
-					};
-					side="West";
-					flags=4;
-					class Attributes
-					{
-						skill=0.60000002;
-						init="this disableai ""move""; id = [""MEDIC"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";this setVariable[""displayName"", ""A3 - Medic""];";
-						description="A3 - Medic";
-						isPlayable=1;
-					};
-					id=321;
-					type="rhsusf_army_ocp_medic";
-					atlOffset=1.9073486e-006;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=312;
-			atlOffset=1.9073486e-006;
-		};
-		class Item26
+		class Item22
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3568,7 +2747,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item27
+		class Item23
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3679,7 +2858,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item28
+		class Item24
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3790,7 +2969,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item29
+		class Item25
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -3901,7 +3080,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item30
+		class Item26
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4012,7 +3191,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item31
+		class Item27
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4123,7 +3302,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item32
+		class Item28
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4234,7 +3413,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item33
+		class Item29
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4345,7 +3524,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item34
+		class Item30
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4456,7 +3635,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item35
+		class Item31
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4567,7 +3746,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item36
+		class Item32
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4678,7 +3857,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item37
+		class Item33
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4789,7 +3968,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item38
+		class Item34
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -4900,7 +4079,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item39
+		class Item35
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5011,7 +4190,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item40
+		class Item36
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5122,7 +4301,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item41
+		class Item37
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5233,7 +4412,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item42
+		class Item38
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5344,7 +4523,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item43
+		class Item39
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5455,7 +4634,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item44
+		class Item40
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5566,7 +4745,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item45
+		class Item41
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5677,7 +4856,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item46
+		class Item42
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5788,7 +4967,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item47
+		class Item43
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -5899,7 +5078,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item48
+		class Item44
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6010,7 +5189,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item49
+		class Item45
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6121,7 +5300,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item50
+		class Item46
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6232,7 +5411,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item51
+		class Item47
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6343,7 +5522,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item52
+		class Item48
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6454,7 +5633,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item53
+		class Item49
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6565,7 +5744,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item54
+		class Item50
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6676,7 +5855,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item55
+		class Item51
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6787,7 +5966,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item56
+		class Item52
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -6898,7 +6077,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item57
+		class Item53
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7009,7 +6188,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item58
+		class Item54
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7120,7 +6299,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item59
+		class Item55
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7231,7 +6410,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item60
+		class Item56
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7342,7 +6521,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item61
+		class Item57
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7453,7 +6632,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item62
+		class Item58
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7564,7 +6743,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item63
+		class Item59
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7675,7 +6854,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item64
+		class Item60
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7786,7 +6965,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item65
+		class Item61
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -7897,7 +7076,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item66
+		class Item62
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8008,7 +7187,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item67
+		class Item63
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8119,7 +7298,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item68
+		class Item64
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8230,7 +7409,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item69
+		class Item65
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -8339,6 +7518,540 @@ class Mission
 					};
 				};
 				nAttributes=5;
+			};
+		};
+		class Item66
+		{
+			dataType="Marker";
+			position[]={16250.344,0,16349.682};
+			name="AreaOfOperations";
+			markerType="RECTANGLE";
+			type="rectangle";
+			fillName="Border";
+			a=5000;
+			b=5000;
+			drawBorder=1;
+			id=609;
+			atlOffset=-20.555054;
+		};
+		class Item67
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={19913.002,20.098675,19473.365};
+				angles[]={6.2113094,0,6.1967349};
+			};
+			title="Spectators";
+			description="These are required for mission to pass. Add more if you intend to scale up the player size.";
+			id=611;
+		};
+		class Item68
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={16292.434,17.950001,16351.29};
+			};
+			title="MapBorders";
+			description="Marker required for coverMap.sqf to crop the map to intended size and limit the area of mission.";
+			id=612;
+			atlOffset=-0.00013542175;
+		};
+		class Item69
+		{
+			dataType="Marker";
+			position[]={12498.309,0,19534.238};
+			name="marker_11";
+			text="Start USA";
+			type="flag_USA";
+			id=613;
+			atlOffset=-48.079731;
+		};
+		class Item70
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={12505.242,42.377998,19440.076};
+				angles[]={6.249866,0,0.0093286335};
+			};
+			title="Start position";
+			description="Place the marker on top of starting position of one faction's main forces. Set visibility to other sides in init.sqf if needed.";
+			id=614;
+			atlOffset=-0.00016403198;
+		};
+		class Item71
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={15345.073,-0.067000002,14610.565};
+			};
+			title="IMPORTANT";
+			description="Remember to uncheck the ""binarization"" tab when saving and exporting the scenario!";
+			id=618;
+			atlOffset=73.344551;
+		};
+		class Item72
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={16489.979,0,14598.888};
+			};
+			title="Missions under heavy load";
+			description="If your mission has more than 50+ players, remember to enable Garbage Collection while making the mission. It can be found under Atributes->Multiplayer->Garbage Collection";
+			id=619;
+			atlOffset=56.1647;
+		};
+		class Item73
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={14321.684,0,14587.831};
+			};
+			title="Placing units";
+			description="Earlier you place a unit/group, the higher on slotting tree it will be shown. Use ORBATs if you are unsure of how this works.";
+			id=620;
+			atlOffset=52.739948;
+		};
+		class Item74
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={14965.701,15.141854,17501.158};
+				angles[]={6.251193,0,0.073199101};
+			};
+			id=621;
+			type="ACE_moduleBasicMedicalSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleBasicMedicalSettings_medicSetting_basicEpi";
+					expression="_this setVariable ['medicSetting_basicEpi',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_moduleBasicMedicalSettings_useLocation_basicEpi";
+					expression="_this setVariable ['useLocation_basicEpi',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item75
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={15272.924,17.616577,17485.43};
+				angles[]={0.0053265258,0,6.2805333};
+			};
+			title="Medical settings";
+			description="There is no need to change these. Make sure that playable units are able to use only the basic medical settings.";
+			id=622;
+		};
+		class Item76
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={19690.521,22.936855,16632.686};
+				angles[]={0.017329043,0,0.031988446};
+			};
+			id=623;
+			type="ACE_moduleRepairSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleRepairSettings_fullRepairLocation";
+					expression="_this setVariable ['fullRepairLocation',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_moduleRepairSettings_engineerSetting_fullRepair";
+					expression="_this setVariable ['engineerSetting_fullRepair',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ACE_moduleRepairSettings_engineerSetting_Repair";
+					expression="_this setVariable ['engineerSetting_Repair',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ACE_moduleRepairSettings_consumeItem_ToolKit";
+					expression="_this setVariable ['consumeItem_ToolKit',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ACE_moduleRepairSettings_repairDamageThreshold";
+					expression="_this setVariable ['repairDamageThreshold',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.60000002;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ACE_moduleRepairSettings_wheelRepairRequiredItems";
+					expression="_this setVariable ['wheelRepairRequiredItems',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ACE_moduleRepairSettings_repairDamageThreshold_Engineer";
+					expression="_this setVariable ['repairDamageThreshold_Engineer',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0.40000001;
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ACE_moduleRepairSettings_engineerSetting_Wheel";
+					expression="_this setVariable ['engineerSetting_Wheel',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ACE_moduleRepairSettings_addSpareParts";
+					expression="_this setVariable ['addSpareParts',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=9;
+			};
+		};
+		class Item77
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={19446.881,20.996069,16632.686};
+				angles[]={-0,0,0.038647637};
+			};
+			id=624;
+			type="ACE_moduleRefuelSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleRefuelSettings_rate";
+					expression="_this setVariable ['rate',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item78
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={19196.826,22.965233,16639.098};
+			};
+			id=625;
+			type="ACE_moduleRearmSettings";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleRearmSettings_level";
+					expression="_this setVariable ['level',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=2;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item79
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={19458.193,22.021999,16377.271};
+				angles[]={6.2671871,0,6.2818484};
+			};
+			title="Logistics";
+			description="You can edit the logistic settings of mission with these modules. Who should be engineer - Link the module to character. How should vehicle be re-armed. How fast should vehicle be refueled. What parts can be fixed on field and what needs engineer/repair vehicle for it.";
+			id=626;
+			atlOffset=-8.7738037e-005;
+		};
+		class Item80
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={19836.715,24.52581,16632.473};
+				angles[]={6.2272449,0,6.2738566};
+			};
+			id=627;
+			type="ACE_moduleAssignEngineerRoles";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleAssignEngineerRoles_EnableList";
+					expression="_this setVariable ['EnableList',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_moduleAssignEngineerRoles_role";
+					expression="_this setVariable ['role',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item81
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={19766.49,24.735977,16632.473};
+				angles[]={6.2698536,0,0.039977662};
+			};
+			id=629;
+			type="ACE_moduleAssignRepairVehicle";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ACE_moduleAssignRepairVehicle_role";
+					expression="_this setVariable ['role',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ACE_moduleAssignRepairVehicle_EnableList";
+					expression="_this setVariable ['EnableList',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=2;
 			};
 		};
 	};

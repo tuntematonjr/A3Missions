@@ -9,19 +9,20 @@ tf_no_auto_long_range_radio = true;
 tf_same_lr_frequencies_for_side = true;
 TF_give_personal_radio_to_regular_soldier = true;
 
-  
-CHVD_allowNoGrass = true; // Set 'false' if you want to disable "Low" option for terrain (default: true)
-CHVD_maxView = 1500; // Set maximum view distance (default: 12000)
-CHVD_maxObj = 1500; // Set maximimum object view distance (default: 12000) 
+//These must be in init.sqf
+CHVD_allowNoGrass = true; 	// Set 'false' if you want to disable "Low" option for terrain (default: true)
+CHVD_maxView = 1500; 		// Set maximum view distance (default: 12000) Don't tell players exact number you placed in here
+CHVD_maxObj = 1500; 		// Set maximimum object view distance (default: 12000) Don't tell players exact number you placed in here
 
 [] spawn afi_safestart;
 
+afi_jip_enabled = true; 	// JIP restrincting system is on
+afi_jip_allowed = true; 	// Jip is allowed
+afi_jip_time = 300; 		// Time in which JIP is allowed to server. Number in seconds from the time which the mission started.
 
 enableSaving [ false, false ];
 
-/*
-[] execVM "VCOMAI\init.sqf";
-
+/*//Execute scripts like this so they are properly ran only on server, not on clients.
 if (isServer) then {
 [] execvm "reinforcementopfor.sqf";
 [] execvm "extract\init.sqf";
@@ -39,16 +40,11 @@ if (!isNull player) then
 	{
 		waitUntil {!isNull player};
 		nul = [] execVM "briefing.sqf";
-		["MarkerName"] execVM "scripts\coverMap.sqf";
-	
-		/*if(side player == WEST) then 
+		["AreaOfOperations"] execVM "scripts\coverMap.sqf";
+		if (side player == west) then //Hides the markers named below so blufor can't see it on map. Edit the WEST for intended case. EAST=Opfor/RESISTANCE=Indfor
 		{
-			[]execvm "valitsealoitus.sqf";
-			sleep 2;
-			_type = player getVariable "plank_class";
-			_rakennusaika = "planktime" call BIS_fnc_getParamValue;
-			[_type, player, _rakennusaika] execVM "plank_settings.sqf";
-		};*/
+		"MarkerName" setMarkerAlphaLocal 0;
+		};
 	};
 };
 
@@ -58,17 +54,14 @@ if (!isServer && isNull player) then
 	waitUntil {!isNull player};
 	[]execvm "start_text\init.sqf";
 	nul = [] execVM "briefing.sqf";
-	["MarkerName"] execVM "scripts\coverMap.sqf";
-	/*if (hasInterface) then 
+	["AreaOfOperations"] execVM "scripts\coverMap.sqf";
+	if (hasInterface) then 
 	{
 	waitUntil {!isNull player};
-		if(side player == WEST) then 
+		if (side player == west) then //Hides the markers named below so blufor can't see it on map. Edit the WEST for intended case. EAST=Opfor/RESISTANCE=Indfor
 		{
-		sleep 2;
-		_type = player getVariable "plank_class";
-		_rakennusaika = "planktime" call BIS_fnc_getParamValue;
-		[_type, player, _rakennusaika] execVM "plank_settings.sqf";
+		"MarkerName" setMarkerAlphaLocal 0;
 		};
-	};*/
+	};
 }; 
 

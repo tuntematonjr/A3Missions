@@ -10,20 +10,38 @@ wreckLimit = 6;
 wreckRemovalMinTime = 300; //seconds
 wreckRemovalMaxTime = 600; //seconds 
 
+class Header
+{
+	minPlayers = 1;//Min players of your mission
+	maxPlayers = 99;//Max players of your mission
+	gameType = Coop;//Mission type, can be either Coop/Seize/Defend/Team/Unknown
+};
 
-author = "Saunatyyny";
-onLoadName = "CO99 NAME";
-onLoadMission = "www.armafinland.fi";
+author = "YourName"; //Your name here
+onLoadName = "MissionName";//Your mission name
+onLoadMission = "www.armafinland.fi";//Free to edit, don't make it too long as it only appears on loadscreen
+loadscreen="resources\loadscreen.jpg";//Image displayed while mission is loading. Not required.
+
+
+class Params
+{
+    class afi_safeStart_duration
+    {
+            title = "SafeStart Timer";
+            values[] = {0,1,2,3,4,5,6,7,8,9,10,15};//You can change safestart times by modifying this array
+            texts[] = {"Safe Start Off","1","2","3","4","5","6","7","8","9","10","15"};//Remember to do same changes to these values also at the same point.
+            default = 5;
+            code = "afi_safeStart_timer = %1";
+    };
+};
+
+//Don't delete anything below this point!!!
 respawnButton = 1;
 disabledAI = 0;
 respawn = 1;
 enableDebugConsole = 1;
-loadscreen="resources\loadscreen.jpg";
 
 
-class Header
-{
-	minPlayers = 1;
-	maxPlayers = 99;
-	gameType = Coop;
-};
+
+
+
