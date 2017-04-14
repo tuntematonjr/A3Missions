@@ -34,13 +34,13 @@ execvm "moveukot.sqf";
 //NON-JIP
 if (!isNull player) then 
 {
-[]execvm "start_text\init.sqf";
+	[]execvm "scripts\start_text\init.sqf";
+	nul= ["AreaOfOperations"]execvm "scripts\coverMap\coverMap.sqf";
 
 	if (hasInterface) then 
 	{
 		waitUntil {!isNull player};
 		nul = [] execVM "briefing.sqf";
-		["AreaOfOperations"] execVM "scripts\coverMap.sqf";
 		if (side player == west) then //Hides the markers named below so blufor can't see it on map. Edit the WEST for intended case. EAST=Opfor/RESISTANCE=Indfor
 		{
 		"MarkerName" setMarkerAlphaLocal 0;
@@ -52,9 +52,9 @@ if (!isNull player) then
 if (!isServer && isNull player) then 
 { 
 	waitUntil {!isNull player};
-	[]execvm "start_text\init.sqf";
+	[]execvm "scripts\start_text\init.sqf";
+	nul= ["AreaOfOperations"]execvm "scripts\coverMap\coverMap.sqf";
 	nul = [] execVM "briefing.sqf";
-	["AreaOfOperations"] execVM "scripts\coverMap.sqf";
 	if (hasInterface) then 
 	{
 	waitUntil {!isNull player};

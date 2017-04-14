@@ -1,0 +1,3571 @@
+version=53;
+class EditorData
+{
+	moveGridStep=1;
+	angleGridStep=0.2617994;
+	scaleGridStep=1;
+	autoGroupingDist=10;
+	toggles=513;
+	class ItemIDProvider
+	{
+		nextID=3194;
+	};
+	class MarkerIDProvider
+	{
+		nextID=173;
+	};
+	class Camera
+	{
+		pos[]={10999.839,704.9549,9606.5781};
+		dir[]={0.56794417,-0.74616396,0.34773558};
+		up[]={0.63634706,0.6657365,0.389615};
+		aside[]={0.52223271,2.2444874e-007,-0.85294694};
+	};
+};
+binarizationWanted=0;
+addons[]=
+{
+	"rhsusf_c_troops",
+	"rhsusf_vehicles",
+	"RHS_US_A2Port_Armor"
+};
+class AddonsMetaData
+{
+	class List
+	{
+		items=3;
+		class Item0
+		{
+			className="rhsusf_c_troops";
+			name="RHSUSF Infantry & Equipment";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+		class Item1
+		{
+			className="rhsusf_vehicles";
+			name="rhsusf_vehicles";
+		};
+		class Item2
+		{
+			className="RHS_US_A2Port_Armor";
+			name="M2 Bradley IFV";
+			author="Red Hammer Studios";
+			url="http://www.rhsmods.org/";
+		};
+	};
+};
+randomSeed=11571035;
+class ScenarioData
+{
+	author="Ahteri";
+	overviewText="USA on ottanut hallintaan Lopatino linjan, Venäjä hyökkää. Ratio 7:4 .";
+	saving=0;
+	respawn=1;
+	class Header
+	{
+		gameType="TDM";
+		minPlayers=90;
+		maxPlayers=109;
+	};
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+					class value
+					{
+						items=1;
+						class Item0
+						{
+							class data
+							{
+								class type
+								{
+									type[]=
+									{
+										"STRING"
+									};
+								};
+								value="Spectator";
+							};
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
+			property="ReviveRequiredTrait";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute2
+		{
+			property="ReviveMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute3
+		{
+			property="ReviveRequiredItemsFakConsumed";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute4
+		{
+			property="SharedObjectives";
+			expression="if (isMultiplayer) then {[_value] spawn bis_fnc_sharedObjectives;};";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute5
+		{
+			property="ReviveMedicSpeedMultiplier";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=2;
+				};
+			};
+		};
+		class Attribute6
+		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute7
+		{
+			property="ReviveForceRespawnDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=3;
+				};
+			};
+		};
+		class Attribute8
+		{
+			property="ReviveBleedOutDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=20;
+				};
+			};
+		};
+		class Attribute9
+		{
+			property="ReviveDelay";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=6;
+				};
+			};
+		};
+		class Attribute10
+		{
+			property="ReviveUnconsciousStateMode";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute11
+		{
+			property="ReviveRequiredItems";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=12;
+	};
+	class Category1
+	{
+		name="Scenario";
+		class Attribute0
+		{
+			property="EnableDebugConsole";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		nAttributes=1;
+	};
+};
+class Mission
+{
+	class Intel
+	{
+		briefingName="TVT109 Lopatino line v4";
+		overviewText="USA on ottanut hallintaan Lopatino linjan, Venäjä hyökkää. Ratio 7:4 .";
+		resistanceWest=0;
+		timeOfChanges=4592.6982;
+		startWeather=0.68743712;
+		startFog=0.74991643;
+		startWind=0.099999994;
+		startWaves=0.099999994;
+		forecastWeather=0.68743712;
+		forecastFog=0.50416541;
+		forecastWind=0.099999994;
+		forecastWaves=0.099999994;
+		forecastLightnings=0.099999994;
+		year=2004;
+		month=9;
+		day=27;
+		hour=11;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Entities
+	{
+		items=15;
+		class Item0
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=4;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14636.65,257.12738,16195.603};
+						angles[]={0,0.51220417,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						rank="LIEUTENANT";
+						init="this disableai ""move""; A10 = group this; group this setGroupId [""A10""]; id = [""PL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A10 - Platoon Commander (CO)";
+						isPlayable=1;
+					};
+					id=1796;
+					type="rhsusf_army_ucp_squadleader";
+					atlOffset=239.07594;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14635.027,257.2005,16195.659};
+						angles[]={0,0.51219416,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						rank="SERGEANT";
+						init="this disableai ""move""; id = [""PL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A15 - PSG (Staff Sergeant)";
+						isPlayable=1;
+					};
+					id=1797;
+					type="rhsusf_army_ucp_teamleader";
+					atlOffset=239.14906;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14635.499,257.06317,16194.583};
+						angles[]={0,0.51220417,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="LIEUTENANT";
+						init="this disableai ""move""; A10 = group this; group this setGroupId [""A10""]; id = [""PL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A10 - RTO Operator";
+						isPlayable=1;
+					};
+					id=1798;
+					type="rhsusf_army_ucp_squadleader";
+					atlOffset=239.01173;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14636.507,257.3064,16197.702};
+						angles[]={0,0.7460928,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="this disableai ""move"";  id = [""MEDIC"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A10 - Medic";
+						isPlayable=1;
+					};
+					id=1824;
+					type="rhsusf_army_ucp_medic";
+					atlOffset=239.25496;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1795;
+			atlOffset=239.07594;
+		};
+		class Item1
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=9;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14652.232,263.02591,16230.704};
+						angles[]={0,3.4970114,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="this disableai ""move""; A1 = group this; group this setGroupId [""A1""]; id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A1 - Squad Leader";
+						isPlayable=1;
+					};
+					id=1800;
+					type="rhsusf_army_ucp_squadleader";
+					atlOffset=245.01604;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14653.786,263.39728,16232.075};
+						angles[]={0,3.4970076,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						init="this disableai ""move"";  id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A1 - Team Leader";
+						isPlayable=1;
+					};
+					id=1805;
+					type="rhsusf_army_ucp_teamleader";
+					atlOffset=245.40044;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14651.979,263.57489,16233.67};
+						angles[]={0,3.4970076,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="this disableai ""move"";  id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A1 - Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1806;
+					type="rhsusf_army_ucp_autorifleman";
+					atlOffset=245.58841;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14652.867,263.48865,16232.892};
+						angles[]={0,3.4970081,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="this disableai ""move"";  id = [""ASSTAR"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A1 - Assistant Autorifleman";
+						isPlayable=1;
+					};
+					id=1807;
+					type="rhsusf_army_ucp_autoriflemana";
+					atlOffset=245.4971;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14656.631,263.75293,16233.111};
+						angles[]={0,3.4970028,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="this disableai ""move"";  id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A1 - Grenadier";
+						isPlayable=1;
+					};
+					id=1808;
+					type="rhsusf_army_ucp_grenadier";
+					atlOffset=245.77252;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14653.514,263.80194,16234.243};
+						angles[]={0,3.679733,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						init="this disableai ""move"";  id = [""RIFLEAT"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A1 - Rifleman AT";
+						isPlayable=1;
+					};
+					id=2525;
+					type="rhsusf_army_ucp_riflemanat";
+					atlOffset=245.82208;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14655.754,264.01425,16235.155};
+						angles[]={0,3.6797125,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="this disableai ""move""; A1 = group this; group this setGroupId [""A1""]; id = [""CREWCOM"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A01 - Commander - M2A3";
+						isPlayable=1;
+					};
+					id=2527;
+					type="rhsusf_army_ucp_crewman";
+					atlOffset=246.04669;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14654.765,264.15253,16236.269};
+						angles[]={0,3.6797125,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="this disableai ""move""; id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A01 - Gunner - M2A3";
+						isPlayable=1;
+					};
+					id=2528;
+					type="rhsusf_army_ucp_crewman";
+					atlOffset=246.19054;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14653.599,264.28387,16237.357};
+						angles[]={0,3.6797125,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="this disableai ""move""; id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A01 - Driver - M2A3";
+						isPlayable=1;
+					};
+					id=2529;
+					type="rhsusf_army_ucp_crewman";
+					atlOffset=246.32904;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1799;
+			atlOffset=245.01604;
+		};
+		class Item2
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=9;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14676.418,273.12399,16270.471};
+						angles[]={0,3.687948,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="this disableai ""move""; A2 = group this; group this setGroupId [""A2""]; id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A2 - Squad Leader";
+						isPlayable=1;
+					};
+					id=1810;
+					type="rhsusf_army_ucp_squadleader";
+					atlOffset=255.27737;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14678.973,273.17392,16270.49};
+						angles[]={0,3.6879566,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						init="this disableai ""move"";  id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A2 - Team Leader";
+						isPlayable=1;
+					};
+					id=1815;
+					type="rhsusf_army_ucp_teamleader";
+					atlOffset=255.34229;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14676.796,273.19034,16271.786};
+						angles[]={0,3.6879566,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="this disableai ""move"";  id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A2 - Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1816;
+					type="rhsusf_army_ucp_autorifleman";
+					atlOffset=255.35176;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14677.957,273.181,16271.155};
+						angles[]={0,3.6879537,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="this disableai ""move"";  id = [""ASSTAR"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A2 - Assistant Autorifleman";
+						isPlayable=1;
+					};
+					id=1817;
+					type="rhsusf_army_ucp_autoriflemana";
+					atlOffset=255.34979;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14676.55,273.31177,16274.52};
+						angles[]={0,3.6879537,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="this disableai ""move"";  id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A2 - Grenadier";
+						isPlayable=1;
+					};
+					id=1818;
+					type="rhsusf_army_ucp_grenadier";
+					atlOffset=255.47752;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14677.629,273.29715,16273.881};
+						angles[]={0,3.6879647,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						init="this disableai ""move"";  id = [""RIFLEAT"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A2 - Rifleman AT";
+						isPlayable=1;
+					};
+					id=2515;
+					type="rhsusf_army_ucp_riflemanat";
+					atlOffset=255.47278;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.05;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14681.674,273.49609,16276.412};
+						angles[]={0,3.6879506,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="this disableai ""move""; A2 = group this; group this setGroupId [""A2""]; id = [""CREWCOM"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A02 - Commander - M2A3";
+						isPlayable=1;
+					};
+					id=2523;
+					type="rhsusf_army_ucp_crewman";
+					atlOffset=255.68034;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14680.693,273.51086,16277.532};
+						angles[]={0,3.6879506,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="this disableai ""move""; id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A02 - Gunner - M2A3";
+						isPlayable=1;
+					};
+					id=2520;
+					type="rhsusf_army_ucp_crewman";
+					atlOffset=255.68802;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14679.537,273.52728,16278.632};
+						angles[]={0,3.6879506,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="this disableai ""move""; id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A02 - Driver - M2A3";
+						isPlayable=1;
+					};
+					id=2522;
+					type="rhsusf_army_ucp_crewman";
+					atlOffset=255.69695;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1809;
+			atlOffset=255.27737;
+		};
+		class Item3
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=9;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14706.322,274.7999,16301.021};
+						angles[]={0,4.0786524,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="this disableai ""move""; A3 = group this; group this setGroupId [""A3""]; id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A3 - Squad Leader";
+						isPlayable=1;
+					};
+					id=1820;
+					type="rhsusf_army_ucp_squadleader";
+					atlOffset=256.983;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14708.61,274.93484,16300.43};
+						angles[]={0,4.0786624,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						init="this disableai ""move"";  id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A3 - Team Leader";
+						isPlayable=1;
+					};
+					id=1825;
+					type="rhsusf_army_ucp_teamleader";
+					atlOffset=257.12189;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14707.622,274.91321,16301.873};
+						angles[]={0,4.0786624,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="this disableai ""move"";  id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A3 - Automatic Rifleman";
+						isPlayable=1;
+					};
+					id=1826;
+					type="rhsusf_army_ucp_autorifleman";
+					atlOffset=257.09448;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14708.164,274.92679,16301.136};
+						angles[]={0,4.0786614,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="this disableai ""move"";  id = [""ASSTAR"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A3 - Assistant Autorifleman";
+						isPlayable=1;
+					};
+					id=1827;
+					type="rhsusf_army_ucp_autoriflemana";
+					atlOffset=257.11099;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14708.3,275.01559,16303.737};
+						angles[]={0,4.0786586,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="this disableai ""move"";  id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A3 - Grenadier";
+						isPlayable=1;
+					};
+					id=1828;
+					type="rhsusf_army_ucp_grenadier";
+					atlOffset=257.18939;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14708.746,275.0202,16302.919};
+						angles[]={0,4.0786591,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.44999999;
+						rank="CORPORAL";
+						init="this disableai ""move"";  id = [""RIFLEAT"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A3 - Rifleman AT";
+						isPlayable=1;
+					};
+					id=2534;
+					type="rhsusf_army_ucp_riflemanat";
+					atlOffset=257.1973;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14711.115,275.17218,16302.398};
+						angles[]={0,4.0010099,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="CORPORAL";
+						init="this disableai ""move""; A3 = group this; group this setGroupId [""A3""]; id = [""CREWCOM"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A03 - Commander - M2A3";
+						isPlayable=1;
+					};
+					id=2536;
+					type="rhsusf_army_ucp_crewman";
+					atlOffset=257.35135;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14710.529,275.17581,16303.766};
+						angles[]={0,4.0010099,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="this disableai ""move""; id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A03 - Gunner - M2A3";
+						isPlayable=1;
+					};
+					id=2537;
+					type="rhsusf_army_ucp_crewman";
+					atlOffset=257.34952;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14709.764,275.16888,16305.169};
+						angles[]={0,4.0010099,0};
+					};
+					side="West";
+					class Attributes
+					{
+						rank="SERGEANT";
+						init="this disableai ""move""; id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+						description="A03 - Driver - M2A3";
+						isPlayable=1;
+					};
+					id=2538;
+					type="rhsusf_army_ucp_crewman";
+					atlOffset=257.33713;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.02;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1819;
+			atlOffset=256.983;
+		};
+		class Item4
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14739.659,276.91321,16323.107};
+						angles[]={0,4.0602813,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						rank="LIEUTENANT";
+						init="this disableai ""move""; T1 = group this; group this setGroupId [""T1""]; id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";  this disableai ""move"";";
+						description="T1 - Squad Leader (Weapons 1)";
+						isPlayable=1;
+					};
+					id=1830;
+					type="rhsusf_army_ucp_squadleader";
+					atlOffset=259.07178;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14740.169,276.84329,16325.399};
+						angles[]={0,4.1753511,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						rank="CORPORAL";
+						init="id = [""HEAVYAT"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";  this disableai ""move"";";
+						description="T1 - AT Specialist (SMAW) TL";
+						isPlayable=1;
+					};
+					id=2627;
+					type="rhsusf_army_ocp_riflemanat";
+					atlOffset=259.00186;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14742.043,276.83237,16326.612};
+						angles[]={0,4.1097965,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="id = [""HEAVYATASST"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";  this disableai ""move"";";
+						description="T1 - AT Specialist's Assistant";
+						isPlayable=1;
+					};
+					id=2486;
+					type="rhsusf_army_ocp_rifleman";
+					atlOffset=258.99094;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14738.688,276.81271,16327.255};
+						angles[]={0,4.1753511,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						rank="CORPORAL";
+						init="id = [""HEAVYMG"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";  this disableai ""move"";";
+						description="T1 - Machinegunner TL";
+						isPlayable=1;
+					};
+					id=2967;
+					type="rhsusf_army_ocp_machinegunner";
+					atlOffset=258.97128;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14740.563,276.76678,16328.468};
+						angles[]={0,4.1097965,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="id = [""ASSTHEAVYMG"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";  this disableai ""move"";";
+						description="T1 - MG assistant";
+						isPlayable=1;
+					};
+					id=2968;
+					type="rhsusf_army_ocp_machinegunnera";
+					atlOffset=258.92535;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=1829;
+			atlOffset=259.07178;
+		};
+		class Item5
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14640.165,257.07144,16194.516};
+				angles[]={0,3.3039083,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="id = [""COMHUM"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+				textures="standard";
+			};
+			id=2624;
+			type="rhsusf_m998_w_s_4dr_fulltop";
+			atlOffset=238.92906;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalMask";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_1',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="82ndab_505reg_1stbn_e25_w_ca";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="blankdecal_ca";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_M441_HE"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[12,8,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[1]]],false]";
+						};
+					};
+				};
+				nAttributes=3;
+			};
+		};
+		class Item6
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=5;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14760.419,276.0061,16347.808};
+						angles[]={0,3.6981957,0};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						rank="LIEUTENANT";
+						init="this disableai ""move""; T2 = group this; group this setGroupId [""T2""]; id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";  this disableai ""move"";";
+						description="T2 - Squad Leader (Weapons 2)";
+						isPlayable=1;
+					};
+					id=2679;
+					type="rhsusf_army_ucp_squadleader";
+					atlOffset=258.15466;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14760.083,276.07516,16350.132};
+						angles[]={0,3.8132651,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						rank="CORPORAL";
+						init="id = [""HEAVYAT"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";  this disableai ""move"";";
+						description="T2 - AT Specialist (SMAW) TL";
+						isPlayable=1;
+					};
+					id=2681;
+					type="rhsusf_army_ocp_riflemanat";
+					atlOffset=258.22372;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14761.406,276.19946,16351.93};
+						angles[]={0,3.7477105,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="id = [""HEAVYATASST"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";  this disableai ""move"";";
+						description="T2 - AT Specialist's Assistant";
+						isPlayable=1;
+					};
+					id=2680;
+					type="rhsusf_army_ocp_rifleman";
+					atlOffset=258.34802;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14757.746,276.1001,16351.866};
+						angles[]={0,3.7684975,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						rank="CORPORAL";
+						init="id = [""HEAVYMG"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";  this disableai ""move"";";
+						description="T2 - Machinegunner TL";
+						isPlayable=1;
+					};
+					id=2983;
+					type="rhsusf_army_ocp_machinegunner";
+					atlOffset=258.24866;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={14758.987,276.23392,16353.722};
+						angles[]={0,3.7029428,0};
+					};
+					side="West";
+					class Attributes
+					{
+						skill=0.40000001;
+						init="id = [""ASSTHEAVYMG"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";  this disableai ""move"";";
+						description="T2 - MG assistant";
+						isPlayable=1;
+					};
+					id=2984;
+					type="rhsusf_army_ocp_machinegunnera";
+					atlOffset=258.38248;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_isHandcuffed";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleHandcuffed}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isSurrendered";
+							expression="if (_value) then {[objNull,[_this],true] call ace_captives_fnc_moduleSurrender}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=2678;
+			atlOffset=258.15466;
+		};
+		class Item7
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14755.694,277.83582,16346.141};
+				angles[]={0,3.7225428,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="id = [""WEAHUM"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+				textures="standard";
+			};
+			id=2687;
+			type="rhsusf_m998_w_s_2dr_fulltop";
+			atlOffset=258.04507;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalMask";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_1',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="82ndab_505reg_1stbn_e25_w_ca";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="blankdecal_ca";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_M441_HE"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[12,8,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[1]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="rhs_hideBFT";
+					expression="_this animate ['hide_Antenna',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item8
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14734.623,278.61591,16323.172};
+				angles[]={0,4.0846291,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="id = [""WEAHUM"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+				textures="standard";
+			};
+			id=2688;
+			type="rhsusf_m998_w_s_2dr_fulltop";
+			atlOffset=258.83151;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalMask";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_1',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="82ndab_505reg_1stbn_e25_w_ca";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="blankdecal_ca";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""FirstAidKit""],[4]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhs_mag_M441_HE"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[12,8,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[1]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="rhs_hideBFT";
+					expression="_this animate ['hide_Antenna',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item9
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14734.563,278.07642,16301.251};
+				angles[]={0,5.5124302,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="id = [""tyhja"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+			};
+			id=2959;
+			type="rhsusf_m1025_w";
+			atlOffset=258.30627;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalMask";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_1',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="rhs_hideA2Parts";
+					expression="_this animate ['hide_A2_Parts',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="rhs_hideBFT";
+					expression="_this animate ['hide_Antenna',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="rhs_hideCIP";
+					expression="_this animate ['hide_CIP',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+		class Item10
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14737.731,278.11304,16304.768};
+				angles[]={0,5.5124302,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="id = [""tyhja"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+			};
+			id=2960;
+			type="rhsusf_m1025_w";
+			atlOffset=258.33728;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalMask";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_1',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="rhs_hideA2Parts";
+					expression="_this animate ['hide_A2_Parts',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="rhs_hideBFT";
+					expression="_this animate ['hide_Antenna',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="rhs_hideCIP";
+					expression="_this animate ['hide_CIP',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+		class Item11
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14741.523,278.35913,16307.896};
+				angles[]={0,5.5124302,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="id = [""tyhja"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+			};
+			id=2961;
+			type="rhsusf_m1025_w";
+			atlOffset=258.58334;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="rhs_decalMask";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_1',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_decalDoors";
+					expression="if(_value != 'NoChange')then{ [_this,'unitdecals_2',_value] call rhs_fnc_hmmwv_setDecal}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="NoChange";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle"",""rhs_weap_M136_hedp"",""FirstAidKit""],[2,2,4]],[[""rhs_m136_hedp_mag"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[2,20,8,16,4,2,4,2,2,4]],[[],[]],[[""rhsusf_falconii""],[2]]],false]";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="rhs_hideA2Parts";
+					expression="_this animate ['hide_A2_Parts',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="rhs_hideBFT";
+					expression="_this animate ['hide_Antenna',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="rhs_hideCIP";
+					expression="_this animate ['hide_CIP',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=6;
+			};
+		};
+		class Item12
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14649.213,263.89774,16224.499};
+				angles[]={0,3.6425719,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="id = [""TANKKI"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+				textures="standard";
+			};
+			id=3054;
+			type="RHS_M2A3_wd";
+			atlOffset=244.25688;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle_pmag"",""rhs_weap_fgm148"",""FirstAidKit"",""Medikit""],[4,2,10,2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51"",""rhs_fgm148_magazine_AT"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[75,11,11,4,20,8,4,10,4,4,10]],[[""ToolKit""],[1]],[[""rhsusf_falconii""],[8]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_hideIFFPanel";
+					expression="_this animate ['IFF_Panels_Hide',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item13
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14671.383,274.10733,16262.325};
+				angles[]={0,3.6508098,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="id = [""TANKKI"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+				textures="standard";
+			};
+			id=3055;
+			type="RHS_M2A3_wd";
+			atlOffset=255.01816;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle_pmag"",""rhs_weap_fgm148"",""FirstAidKit"",""Medikit""],[4,2,10,2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51"",""rhs_fgm148_magazine_AT"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[75,11,11,4,20,8,4,10,4,4,10]],[[""ToolKit""],[1]],[[""rhsusf_falconii""],[8]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_hideIFFPanel";
+					expression="_this animate ['IFF_Panels_Hide',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={14700.472,276.0986,16297.001};
+				angles[]={0,4.0930238,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				lock="UNLOCKED";
+				init="id = [""TANKKI"", this] call compile preprocessFileLineNumbers ""loadouts\USkit.sqf"";";
+				textures="standard";
+			};
+			id=3056;
+			type="RHS_M2A3_wd";
+			atlOffset=256.62357;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[""rhs_weap_m4_carryhandle_pmag"",""rhs_weap_fgm148"",""FirstAidKit"",""Medikit""],[4,2,10,2]],[[""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""rhsusf_100Rnd_556x45_soft_pouch"",""rhsusf_100Rnd_762x51"",""rhs_fgm148_magazine_AT"",""rhs_mag_M441_HE"",""rhs_mag_m714_White"",""rhs_mag_m662_red"",""rhs_mag_m67"",""rhs_mag_m18_green"",""rhs_mag_m18_red"",""rhs_mag_an_m8hc""],[75,11,11,4,20,8,4,10,4,4,10]],[[""ToolKit""],[1]],[[""rhsusf_falconii""],[8]]],false]";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="rhs_hideIFFPanel";
+					expression="_this animate ['IFF_Panels_Hide',_value,true]";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+	};
+};

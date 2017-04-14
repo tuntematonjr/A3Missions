@@ -1,15 +1,4 @@
 ﻿
-
-corpseManagerMode = 1;
-corpseLimit = 20;
-corpseRemovalMinTime = 90; //seconds
-corpseRemovalMaxTime = 300; //seconds
-
-wreckManagerMode = 1;
-wreckLimit = 6;
-wreckRemovalMinTime = 300; //seconds
-wreckRemovalMaxTime = 600; //seconds 
-
 class Header
 {
 	minPlayers = 1;//Min players of your mission

@@ -8,18 +8,18 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=631;
+		nextID=636;
 	};
 	class MarkerIDProvider
 	{
-		nextID=13;
+		nextID=14;
 	};
 	class Camera
 	{
-		pos[]={16440.684,46.551392,16512.377};
-		dir[]={-0.85898662,-0.31326893,-0.40502504};
-		up[]={-0.28335577,0.94965714,-0.133607};
-		aside[]={-0.4264943,-7.3800038e-008,0.90451097};
+		pos[]={16456.057,133.66331,16402.332};
+		dir[]={-0.44248343,-0.66490728,0.60181534};
+		up[]={-0.39386556,0.74692267,0.53568965};
+		aside[]={0.80569506,-1.4230609e-006,0.5923894};
 	};
 };
 binarizationWanted=0;
@@ -31,13 +31,14 @@ addons[]=
 	"ace_medical",
 	"ace_repair",
 	"ace_refuel",
-	"ace_rearm"
+	"ace_rearm",
+	"A3_Characters_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=7;
+		items=8;
 		class Item0
 		{
 			className="A3_Data_F_Exp_A";
@@ -84,6 +85,13 @@ class AddonsMetaData
 			name="ACE3 - Rearm";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
+		};
+		class Item7
+		{
+			className="A3_Characters_F";
+			name="Arma 3 Alpha - Characters and Clothing";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -171,7 +179,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=82;
+		items=84;
 		class Item0
 		{
 			dataType="Logic";
@@ -7874,7 +7882,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={19446.881,20.996069,16632.686};
-				angles[]={-0,0,0.038647637};
+				angles[]={0,0,0.038647637};
 			};
 			id=624;
 			type="ACE_moduleRefuelSettings";
@@ -8053,6 +8061,47 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item82
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={16414.629,32.863247,16505.967};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						isPlayer=1;
+					};
+					id=632;
+					type="B_Soldier_A_F";
+					atlOffset=0.00012588501;
+				};
+			};
+			class Attributes
+			{
+			};
+			id=631;
+			atlOffset=0.00012588501;
+		};
+		class Item83
+		{
+			dataType="Marker";
+			position[]={14757.206,0,16457.93};
+			name="MarkerName";
+			text="Invisible marker";
+			type="mil_warning";
+			id=635;
+			atlOffset=-17.879999;
 		};
 	};
 };

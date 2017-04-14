@@ -1,0 +1,657 @@
+version=12;
+class Mission
+{
+	addOns[]=
+	{
+		"rhsusf_c_troops",
+		"a3_map_stratis",
+		"RHS_US_A2Port_Armor"
+	};
+	addOnsAuto[]=
+	{
+		"rhsusf_c_troops",
+		"RHS_US_A2Port_Armor",
+		"a3_map_stratis"
+	};
+	randomSeed=1896157;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+	class Groups
+	{
+		items=4;
+		class Item0
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={1601.3878,5.5,5297.7891};
+					azimut=24.776316;
+					special="NONE";
+					id=0;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_squadleader";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.44999999;
+					init="id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; (group this) setGroupId [""A1""];";
+					description="A1 / Squad leader";
+				};
+				class Item1
+				{
+					position[]={1596.8524,5.5,5297.7031};
+					azimut=24.776316;
+					special="NONE";
+					id=1;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_grenadier";
+					skill=0.40000001;
+					init="id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A1 / Grenadier";
+				};
+				class Item2
+				{
+					position[]={1598.6664,5.5,5296.8643};
+					azimut=24.776316;
+					special="NONE";
+					id=2;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_autorifleman";
+					skill=0.44999999;
+					init="id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A1 / Automatic rifleman";
+				};
+				class Item3
+				{
+					position[]={1600.4816,5.5,5296.0269};
+					azimut=24.776316;
+					special="NONE";
+					id=3;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_teamleader";
+					rank="CORPORAL";
+					skill=0.40000001;
+					init="id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A1 / Team leader";
+				};
+				class Item4
+				{
+					position[]={1602.3018,5.5,5295.1895};
+					azimut=24.776316;
+					special="NONE";
+					id=4;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_grenadier";
+					skill=0.40000001;
+					init="id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A1 / Grenadier";
+				};
+				class Item5
+				{
+					position[]={1604.2141,5.5,5294.3457};
+					azimut=24.776316;
+					special="NONE";
+					id=5;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_autorifleman";
+					skill=0.44999999;
+					init="id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A1 / Automatic rifleman";
+				};
+				class Item6
+				{
+					position[]={1597.4376,5.5,5295.2744};
+					azimut=24.776316;
+					special="NONE";
+					id=6;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_combatcrewman";
+					rank="SERGEANT";
+					skill=0.5;
+					init="id = [""CREWL"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf"";";
+					description="A01 / Platoon leader / Bradley";
+				};
+				class Item7
+				{
+					position[]={1599.4202,5.5,5294.4526};
+					azimut=24.776316;
+					special="NONE";
+					id=7;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_crewman";
+					skill=0.44999999;
+					init="id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A01 / Vehicle gunner / Bradley";
+				};
+				class Item8
+				{
+					position[]={1601.3988,5.5,5293.6045};
+					azimut=24.776316;
+					special="NONE";
+					id=8;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_crewman";
+					skill=0.40000001;
+					init="id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A01 / Vehicle driver / Bradley";
+				};
+			};
+		};
+		class Item1
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={1612.577,5.5,5292.9497};
+					azimut=24.776316;
+					special="NONE";
+					id=9;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_squadleader";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.44999999;
+					init="id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; (group this) setGroupId [""A2""];";
+					description="A2 / Squad leader";
+				};
+				class Item1
+				{
+					position[]={1608.0415,5.5,5292.8613};
+					azimut=24.776316;
+					special="NONE";
+					id=10;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_grenadier";
+					skill=0.40000001;
+					init="id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A2 / Grenadier";
+				};
+				class Item2
+				{
+					position[]={1609.8555,5.5,5292.0254};
+					azimut=24.776316;
+					special="NONE";
+					id=11;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_autorifleman";
+					skill=0.44999999;
+					init="id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A2 / Automatic rifleman";
+				};
+				class Item3
+				{
+					position[]={1611.6708,5.5,5291.1855};
+					azimut=24.776316;
+					special="NONE";
+					id=12;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_teamleader";
+					rank="CORPORAL";
+					skill=0.40000001;
+					init="id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A2 / Team leader";
+				};
+				class Item4
+				{
+					position[]={1613.4911,5.5,5290.3496};
+					azimut=24.776316;
+					special="NONE";
+					id=13;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_grenadier";
+					skill=0.40000001;
+					init="id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A2 / Grenadier";
+				};
+				class Item5
+				{
+					position[]={1615.4033,5.5,5289.5063};
+					azimut=24.776316;
+					special="NONE";
+					id=14;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_autorifleman";
+					skill=0.44999999;
+					init="id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A2 / Automatic rifleman";
+				};
+				class Item6
+				{
+					position[]={1608.6268,5.5,5290.436};
+					azimut=24.776316;
+					special="NONE";
+					id=15;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_combatcrewman";
+					rank="SERGEANT";
+					skill=0.5;
+					init="id = [""CREWL"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf"";";
+					description="A02 / Vehicle commander / Bradley";
+				};
+				class Item7
+				{
+					position[]={1610.6091,5.5,5289.6128};
+					azimut=24.776316;
+					special="NONE";
+					id=16;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_crewman";
+					skill=0.44999999;
+					init="id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A02 / Vehicle gunner / Bradley";
+				};
+				class Item8
+				{
+					position[]={1612.5876,5.5,5288.7656};
+					azimut=24.776316;
+					special="NONE";
+					id=17;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_crewman";
+					skill=0.40000001;
+					init="id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A02 / Vehicle driver / Bradley";
+				};
+			};
+		};
+		class Item2
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={1597.4135,5.5,5290.9028};
+					azimut=24.776316;
+					special="NONE";
+					id=18;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_squadleader";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.44999999;
+					init="id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; (group this) setGroupId [""A3""];";
+					description="A3 / Squad leader";
+				};
+				class Item1
+				{
+					position[]={1592.8782,5.5,5290.8164};
+					azimut=24.776316;
+					special="NONE";
+					id=19;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_grenadier";
+					skill=0.40000001;
+					init="id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A3 / Grenadier";
+				};
+				class Item2
+				{
+					position[]={1594.6919,5.5,5289.98};
+					azimut=24.776316;
+					special="NONE";
+					id=20;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_autorifleman";
+					skill=0.44999999;
+					init="id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A3 / Automatic rifleman";
+				};
+				class Item3
+				{
+					position[]={1596.5074,5.5,5289.1416};
+					azimut=24.776316;
+					special="NONE";
+					id=21;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_teamleader";
+					rank="CORPORAL";
+					skill=0.40000001;
+					init="id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A3 / Team leader";
+				};
+				class Item4
+				{
+					position[]={1598.3271,5.5,5288.3052};
+					azimut=24.776316;
+					special="NONE";
+					id=22;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_grenadier";
+					skill=0.40000001;
+					init="id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A3 / Grenadier";
+				};
+				class Item5
+				{
+					position[]={1600.2401,5.5,5287.4595};
+					azimut=24.776316;
+					special="NONE";
+					id=23;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_autorifleman";
+					skill=0.44999999;
+					init="id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A3 / Automatic rifleman";
+				};
+				class Item6
+				{
+					position[]={1593.4636,5.5,5288.3892};
+					azimut=24.776316;
+					special="NONE";
+					id=24;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_combatcrewman";
+					rank="SERGEANT";
+					skill=0.5;
+					init="id = [""CREWL"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf"";";
+					description="A03 / Platoon 2iC / Bradley";
+				};
+				class Item7
+				{
+					position[]={1595.4459,5.5,5287.5664};
+					azimut=24.776316;
+					special="NONE";
+					id=25;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_crewman";
+					skill=0.44999999;
+					init="id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A03 / Vehicle gunner / Bradley";
+				};
+				class Item8
+				{
+					position[]={1597.4248,5.5,5286.7188};
+					azimut=24.776316;
+					special="NONE";
+					id=26;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_crewman";
+					skill=0.40000001;
+					init="id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A03 / Vehicle driver / Bradley";
+				};
+			};
+		};
+		class Item3
+		{
+			side="WEST";
+			class Vehicles
+			{
+				items=9;
+				class Item0
+				{
+					position[]={1609.2072,5.5,5285.561};
+					azimut=24.776316;
+					special="NONE";
+					id=27;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_squadleader";
+					leader=1;
+					rank="SERGEANT";
+					skill=0.44999999;
+					init="id = [""SL"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; (group this) setGroupId [""A2""];";
+					description="A4 / Squad leader";
+				};
+				class Item1
+				{
+					position[]={1604.6722,5.5,5285.4727};
+					azimut=24.776316;
+					special="NONE";
+					id=28;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_grenadier";
+					skill=0.40000001;
+					init="id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A4 / Grenadier";
+				};
+				class Item2
+				{
+					position[]={1606.4858,5.5,5284.6362};
+					azimut=24.776316;
+					special="NONE";
+					id=29;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_autorifleman";
+					skill=0.44999999;
+					init="id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A4 / Automatic rifleman";
+				};
+				class Item3
+				{
+					position[]={1608.3011,5.5,5283.7974};
+					azimut=24.776316;
+					special="NONE";
+					id=30;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_teamleader";
+					rank="CORPORAL";
+					skill=0.40000001;
+					init="id = [""TL"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A4 / Team leader";
+				};
+				class Item4
+				{
+					position[]={1610.121,5.5,5282.9604};
+					azimut=24.776316;
+					special="NONE";
+					id=31;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_grenadier";
+					skill=0.40000001;
+					init="id = [""GREN"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A4 / Grenadier";
+				};
+				class Item5
+				{
+					position[]={1612.0337,5.5,5282.1177};
+					azimut=24.776316;
+					special="NONE";
+					id=32;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_autorifleman";
+					skill=0.44999999;
+					init="id = [""AR"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A4 / Automatic rifleman";
+				};
+				class Item6
+				{
+					position[]={1605.2572,5.5,5283.0469};
+					azimut=24.776316;
+					special="NONE";
+					id=33;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_combatcrewman";
+					rank="SERGEANT";
+					skill=0.5;
+					init="id = [""CREWL"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf"";";
+					description="A04 / Vehicle commander / Bradley";
+				};
+				class Item7
+				{
+					position[]={1607.2393,5.5,5282.2241};
+					azimut=24.776316;
+					special="NONE";
+					id=34;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_crewman";
+					skill=0.44999999;
+					init="id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A04 / Vehicle gunner / Bradley";
+				};
+				class Item8
+				{
+					position[]={1609.2183,5.5,5281.3774};
+					azimut=24.776316;
+					special="NONE";
+					id=35;
+					side="WEST";
+					vehicle="rhsusf_army_ocp_crewman";
+					skill=0.40000001;
+					init="id = [""CREW"", this] call compile preprocessFileLineNumbers ""loadouts\USAkit.sqf""; ";
+					description="A04 / Vehicle driver / Bradley";
+				};
+			};
+		};
+	};
+	class Vehicles
+	{
+		items=4;
+		class Item0
+		{
+			position[]={1590.8934,5.5,5302.9448};
+			azimut=24.776316;
+			special="NONE";
+			id=36;
+			side="EMPTY";
+			vehicle="RHS_M2A2_wd";
+			skill=0.40000001;
+			description="A3 / Automatic rifleman";
+		};
+		class Item1
+		{
+			position[]={1621.2335,5.5,5287.292};
+			azimut=24.776316;
+			special="NONE";
+			id=37;
+			side="EMPTY";
+			vehicle="RHS_M2A2_wd";
+			skill=0.40000001;
+			description="A3 / Automatic rifleman";
+		};
+		class Item2
+		{
+			position[]={1585.1106,5.5,5290.4072};
+			azimut=24.776316;
+			special="NONE";
+			id=38;
+			side="EMPTY";
+			vehicle="RHS_M2A2_wd";
+			skill=0.40000001;
+			description="A3 / Automatic rifleman";
+		};
+		class Item3
+		{
+			position[]={1617.0103,5.5,5278.4878};
+			azimut=24.776316;
+			special="NONE";
+			id=39;
+			side="EMPTY";
+			vehicle="RHS_M2A2_wd";
+			skill=0.40000001;
+			description="A3 / Automatic rifleman";
+		};
+	};
+};
+class Intro
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=10191069;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroWin
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=12989371;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
+class OutroLoose
+{
+	addOns[]=
+	{
+		"a3_map_stratis"
+	};
+	addOnsAuto[]=
+	{
+		"a3_map_stratis"
+	};
+	randomSeed=7521040;
+	class Intel
+	{
+		timeOfChanges=1800.0002;
+		startWeather=0.30000001;
+		startWind=0.1;
+		startWaves=0.1;
+		forecastWeather=0.30000001;
+		forecastWind=0.1;
+		forecastWaves=0.1;
+		forecastLightnings=0.1;
+		year=2035;
+		month=7;
+		day=6;
+		hour=12;
+		minute=0;
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
+	};
+};
