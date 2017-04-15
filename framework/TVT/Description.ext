@@ -1,0 +1,19 @@
+author = "Tuntematon";
+onLoadName = "Tehtävän nimi";
+onLoadMission = "Hassun hauska teksti";
+loadScreen = "kuvat\top-secret kuva.jpg";
+
+enableDebugConsole = 1;
+disabledAI = 0;
+
+class Params
+{
+    class afi_safeStart_duration
+    {
+            title = "SafeStart Timer";
+            values[] = {0,1,2,3,4,5,6,7,8,9,10,15};
+            texts[] = {"Safe Start Off","1","2","3","4","5","6","7","8","9","10","15"};
+            default = 7;
+            code = "afi_safeStart_timer = %1";
+    };
+};
